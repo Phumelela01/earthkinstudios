@@ -205,6 +205,11 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
 /* About Section */
 .about-grid {
   display: grid;
@@ -242,6 +247,7 @@ p {
   text-decoration: none;
   color: inherit;
   display: block;
+  
 }
 
 .service-icon {
@@ -299,6 +305,21 @@ p {
   margin-top: 1rem;
   font-weight: 600;
   font-size: 1.125rem;
+}
+
+.pricelist {
+  margin-top: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.pricelist:hover {
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
 }
 
 /* Process Page Styles */
