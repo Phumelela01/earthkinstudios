@@ -371,7 +371,7 @@ p {
 }
 
 .timeline-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
@@ -380,6 +380,8 @@ p {
   text-align: center;
   padding: 2rem;
   border: 2px solid #000;
+  min-width: 260px;
+  
 }
 
 .timeline-duration {
