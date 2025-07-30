@@ -371,11 +371,11 @@ p {
 }
 
 .timeline-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr; /* One column = vertical stack */
   gap: 2rem;
-  justify-content: center;
 }
+
 
 .timeline-item {
   flex: 1 1 300px; /* Allows it to grow and shrink with min width */
