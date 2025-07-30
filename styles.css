@@ -210,11 +210,6 @@ p {
   grid-template-columns: 1fr; /* One column = vertical stacking */
   gap: 2rem;
 }
-.grid-4 .grid-item {
-  flex: 1 1 300px; /* Allows it to grow and shrink with min width */
-
-}
-
 
 /* About Section */
 .about-grid {
