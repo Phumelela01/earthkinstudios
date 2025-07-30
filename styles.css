@@ -372,16 +372,18 @@ p {
 
 .timeline-grid {
   display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 .timeline-item {
+  flex: 1 1 300px; /* Allows it to grow and shrink with min width */
+  max-width: 400px;
+  box-sizing: border-box;
   text-align: center;
   padding: 2rem;
   border: 2px solid #000;
-  min-width: 260px;
-  
 }
 
 .timeline-duration {
@@ -390,6 +392,7 @@ p {
   color: #000;
   margin: 1rem 0;
 }
+
 
 /* Portfolio Grid */
 .portfolio-grid {
