@@ -211,6 +211,25 @@ p {
   gap: 2rem;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
 /* About Section */
 .about-grid {
   display: grid;
@@ -248,7 +267,8 @@ p {
   text-decoration: none;
   color: inherit;
   display: block;
-  
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .service-icon {
