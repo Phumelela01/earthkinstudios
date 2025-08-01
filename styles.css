@@ -393,9 +393,23 @@ p {
 
 .timeline-grid {
   display: grid;
-  grid-template-columns: 1fr; /* One column = vertical stack */
+  grid-template-columns: 1fr; /* Mobile default: stack vertically */
   gap: 2rem;
+  justify-content: center;
 }
+
+@media (min-width: 768px) {
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablets and up: 2 cards side by side */
+  }
+}
+
+@media (min-width: 1024px) {
+  .timeline-grid {
+    grid-template-columns: repeat(4, 1fr); /* Desktops: 4 cards side by side */
+  }
+}
+
 
 
 .timeline-item {
